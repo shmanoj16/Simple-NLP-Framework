@@ -90,6 +90,6 @@ def keyword_extraction():
     entity={'keywords':keywords(text).split('\n')}
     return jsonify({'data':entity})
 #Sample Request : 10.168.126.50:4545/keyword_extraction?value=Challenges in natural language processing frequently involve... speech recognition, natural language understanding, natural language... generation (frequently from formal, machine-readable logical forms),... connecting language and machine perception, dialog systems, or some... combination thereof. 
-
+# Where 10.168.126.50 is your IP
 if __name__ == '__main__':
     app.run(host='0.0.0.0',port=4545,debug=True)
